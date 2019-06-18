@@ -9,26 +9,27 @@
 
 <head>
 
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="inova agency">
 
   <!-- Meta OG -->
-  <meta property="og:title" content="Ecocit' - Baseline" />
+  <meta property="og:title" content="Cit'in Move - Baseline" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />   <!-- url du site -->
   <meta property="og:image" content="" /> <!--url de la miniature du site (1200x627) -->
   <meta property="og:description" content="" /> <!--description du site -->
-  <meta property="og:site_name" content="Ecocit'" /> <!--description du site -->
+  <meta property="og:site_name" content="Cit'in Move" /> <!--description du site -->
   <!-- Meta Twitter card -->
-  <meta name="twitter:title" content="Ecocit' - Baseline">
+  <meta name="twitter:title" content="Cit'in Move - Baseline">
   <meta name="twitter:description" content=""> <!-- Description -->
   <meta name="twitter:image" content=""> <!-- Images for this Card support an aspect ratio of 2:1 with minimum dimensions of 300x157 or maximum of 4096x4096 pixels. Images must be less than 5MB in size. JPG, PNG, WEBP and GIF formats are supported. Only the first frame of an animated GIF will be used. SVG is not supported -->
 
 
-  
-  <title>Ecocit'</title>
+
+  <title>Cit'in Move</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +51,7 @@
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <div style="width: 200px; height:50px; border: 1px solid #000;display: flex; align-items: center; justify-content: center">
-         Ecocit' Logo
+         Cit'in Move Logo
         </div>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +78,7 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Ecocit'</h1>
+        <h1 class="mx-auto my-0 text-uppercase">Cit'in Move</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">
           Baseline du concept. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. 
@@ -256,8 +257,15 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Ecocit' 2019
+      <a href="mentions-legales.html">Mentions Légales / CGU</a>
     </div>
+    <div class="container">
+      Copyright &copy; Cit'in Move 2019
+    </div>
+
+    <a href="javascript:showAxeptioButton()">
+      Cliquez-ici pour modifier vos préférences en matière de cookies
+    </a>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
@@ -269,7 +277,25 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/script.min.js"></script>
-
+  <script>
+    void 0 === window._axcb && (window._axcb = []);
+    window._axcb.push(function(axeptio) {
+    axeptio.on("cookies:complete", function(choices) {
+      
+      })
+    })
+  </script>
+  
+<script type="text/javascript">
+  var el = document.createElement('script');
+      el.setAttribute('src', 'https://static.axept.io/sdk.js');
+      el.setAttribute('type', 'text/javascript');
+      el.setAttribute('async', true);
+      el.setAttribute('data-id', '5d094656c4211a305bb29acd');
+  if (document.body !== null) {
+    document.body.appendChild(el);
+  }
+</script>
 </body>
 
 </html>
