@@ -1,3 +1,9 @@
+<?php session_start(); ?>
+<?php
+    $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+    unset($_SESSION['msg']);
+    echo $statusMsg;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +14,20 @@
   <meta name="description" content="">
   <meta name="author" content="inova agency">
 
+  <!-- Meta OG -->
+  <meta property="og:title" content="Ecocit' - Baseline" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />   <!-- url du site -->
+  <meta property="og:image" content="" /> <!--url de la miniature du site (1200x627) -->
+  <meta property="og:description" content="" /> <!--description du site -->
+  <meta property="og:site_name" content="Ecocit'" /> <!--description du site -->
+  <!-- Meta Twitter card -->
+  <meta name="twitter:title" content="Ecocit' - Baseline">
+  <meta name="twitter:description" content=""> <!-- Description -->
+  <meta name="twitter:image" content=""> <!-- Images for this Card support an aspect ratio of 2:1 with minimum dimensions of 300x157 or maximum of 4096x4096 pixels. Images must be less than 5MB in size. JPG, PNG, WEBP and GIF formats are supported. Only the first frame of an animated GIF will be used. SVG is not supported -->
+
+
+  
   <title>Ecocit'</title>
 
   <!-- Bootstrap core CSS -->
@@ -30,7 +50,7 @@
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <div style="width: 200px; height:50px; border: 1px solid #000;display: flex; align-items: center; justify-content: center">
-          Logo d'Ecocit'
+         Ecocit' Logo
         </div>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -156,10 +176,20 @@
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-5">Abonnez-vous à la Newsletter</h2>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Entrer une adresse mail">
-            <button type="submit" class="btn btn-primary mx-auto">S'abonner</button>
+          <form class="form-inline d-flex" method="post" action="php/action.php">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" name="email" placeholder="Entrer une adresse mail">
+            <input type="submit" class="btn btn-primary mx-auto"  name="submit" value="S'abonner">
           </form>
+
+
+          <!-- MAILCHIMP FORM -->
+
+          <!-- <form method="post" action="php/action.php">
+              <p><label>First Name: </label><input type="text" name="fname" /></p>
+              <p><label>Last Name: </label><input type="text" name="lname" /></p>
+              <p><label>Email: </label><input type="text" name="email" /></p>
+              <p><input type="submit" name="submit" value="SUBSCRIBE"/></p>
+          </form> -->
 
         </div>
       </div>
@@ -216,7 +246,7 @@
           <i class="fab fa-facebook-f"></i>
         </a>
         <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
 
