@@ -8,6 +8,28 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142378527-1"></script>
+
+  <!-- Hotjar Tracking Code for https://jeremie-vangfoua.fr/ -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1369514,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142378527-1');
+  </script>
 
 
   <meta charset="utf-8">
@@ -67,7 +89,7 @@
             <a class="nav-link js-scroll-trigger" href="#projects">Notre projet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contactez-nous</a>
+            <a class="nav-link js-scroll-trigger" href="#signup">Abonnez-vous</a>
           </li>
         </ul>
       </div>
@@ -183,14 +205,7 @@
           </form>
 
 
-          <!-- MAILCHIMP FORM -->
-
-          <!-- <form method="post" action="php/action.php">
-              <p><label>First Name: </label><input type="text" name="fname" /></p>
-              <p><label>Last Name: </label><input type="text" name="lname" /></p>
-              <p><label>Email: </label><input type="text" name="email" /></p>
-              <p><input type="submit" name="submit" value="SUBSCRIBE"/></p>
-          </form> -->
+       
 
         </div>
       </div>
@@ -277,6 +292,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/script.min.js"></script>
+
   <script>
     void 0 === window._axcb && (window._axcb = []);
     window._axcb.push(function(axeptio) {
